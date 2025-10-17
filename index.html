@@ -990,16 +990,37 @@ body {
     <script>
     // Show banner ad with smooth fade-in after delay
     window.addEventListener('load', function() {
-        setTimeout(function() {
-            document.getElementById('bannerAd').classList.add('show');
-        }, 1000); // 1 second delay for smooth entrance
+        console.log('Page loaded, showing banner ad...');
+        var bannerAd = document.getElementById('bannerAd');
+        
+        if (bannerAd) {
+            setTimeout(function() {
+                bannerAd.classList.add('show');
+                console.log('Banner ad shown!');
+            }, 1000); // 1 second delay for smooth entrance
+        } else {
+            console.error('Banner ad element not found!');
+        }
     });
 
     // Close ad with smooth fade-out
-    document.getElementById('closeBtn').addEventListener('click', function() {
-        document.getElementById('bannerAd').classList.remove('show');
+    window.addEventListener('DOMContentLoaded', function() {
+        var closeBtn = document.getElementById('closeBtn');
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function() {
+                var bannerAd = document.getElementById('bannerAd');
+                if (bannerAd) {
+                    bannerAd.classList.remove('show');
+                    console.log('Banner ad closed!');
+                }
+            });
+        } else {
+            console.error('Close button not found!');
+        }
     });
     </script>
 </body>
 </html>
+
 
