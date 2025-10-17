@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Threads - Back to School Collection 2025</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    padding: 20px;
+}
+
+.banner-container {
+    width: 1600px;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    border-radius: 24px;
+    box-shadow: 0 40px 100px rgba(37, 99, 235, 0.3);
+}
+
+/* Gradient Background */
+.gradient-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.25) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(96, 165, 250, 0.2) 0%, transparent 50%);
+    animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Mesh Overlay */
+.mesh-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, transparent 0%, rgba(37, 99, 235, 0.03) 50%, transparent 100%),
+        linear-gradient(0deg, transparent 0%, rgba(96, 165, 250, 0.03) 50%, transparent 100%);
+    animation: meshMove 20s linear infinite;
+}
+
+@keyframes meshMove {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-circle {
+    width: 56px;
+    height: 56px;
+    background: #3b82f6;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s ease;
+}
+
+.logo-circle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(59, 130, 246, 0.5);
+}
+
+.logo-circle img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.brand-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.3px;
+}
+
+.brand-tagline {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #60a5fa;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.left-section {
+    flex: 1;
+    max-width: 700px;
+}
+
+.collection-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    border-radius: 100px;
+    color: #60a5fa;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    animation: fadeInUp 0.6s ease;
+}
+
+.badge-dot {
+    width: 6px;
+    height: 6px;
+    background: #60a5fa;
+    border-radius: 50%;
+    animation: pulse 2s ease infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+.hero-headline {
+    font-size: 120px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 0.9;
+    margin-bottom: 32px;
+    letter-spacing: -5px;
+    animation: fadeInUp 0.6s ease 0.1s backwards;
+}
+
+.hero-headline .gradient-text {
+    background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    margin-bottom: 48px;
+    line-height: 1.7;
+    max-width: 520px;
+    animation: fadeInUp 0.6s ease 0.2s backwards;
+}
+
+.cta-group {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    animation: fadeInUp 0.6s ease 0.3s backwards;
+}
+
+.btn-primary {
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(37, 99, 235, 0.5);
+}
+
+.btn-secondary {
+    padding: 18px 40px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    border-color: #60a5fa;
+    color: #60a5fa;
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.size-selector-main {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+    animation: fadeInUp 0.6s ease 0.4s backwards;
+}
+
+.size-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.3px;
+}
+
+.size-options {
+    display: flex;
+    gap: 8px;
+}
+
+.size-btn-main {
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.size-btn-main:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    animation: fadeIn 0.8s ease 0.4s backwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.product-card {
+    width: 220px;
+    height: 260px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.product-card:hover::before {
+    opacity: 1;
+}
+
+.product-card:hover {
+    transform: translateY(-12px);
+    border-color: rgba(37, 99, 235, 0.5);
+    box-shadow: 0 20px 60px rgba(37, 99, 235, 0.3);
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tag-new {
+    padding: 6px 12px;
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+.product-price {
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #60a5fa;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.product-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.2px;
+}
+
+/* Particles */
+.particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: rgba(96, 165, 250, 0.4);
+    border-radius: 50%;
+    animation: float-particle 15s linear infinite;
+}
+
+@keyframes float-particle {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-900px) translateX(100px);
+        opacity: 0;
+    }
+}
+
+.particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+.particle:nth-child(2) { left: 30%; animation-delay: 2s; }
+.particle:nth-child(3) { left: 50%; animation-delay: 4s; }
+.particle:nth-child(4) { left: 70%; animation-delay: 6s; }
+.particle:nth-child(5) { left: 90%; animation-delay: 8s; }
+
+/* Info Bar */
+.info-bar {
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 36px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    z-index: 15;
+}
+
+.promo-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.promo-text span {
+    color: #60a5fa;
+    font-weight: 700;
+}
+
+/* Banner Ad Styles - FIXED */
+.banner-ad {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 336px;
+    height: 280px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(37, 99, 235, 0.6);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    pointer-events: none;
+    border: 2px solid rgba(96, 165, 250, 0.3);
+    overflow: hidden;
+}
+
+.banner-ad::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(96, 165, 250, 0.15) 0%, transparent 70%);
+    animation: rotate-gradient 10s linear infinite;
+}
+
+@keyframes rotate-gradient {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.banner-ad.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.close-ad {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-ad:hover {
+    background: rgba(239, 68, 68, 0.8);
+    border-color: #ef4444;
+    transform: rotate(90deg);
+}
+
+.ad-content {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.ad-badge {
+    padding: 8px 16px;
+    background: rgba(239, 68, 68, 0.9);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+    animation: pulse-badge 2s ease infinite;
+}
+
+@keyframes pulse-badge {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.ad-content h3 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ad-content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+
+.ad-cta {
+    padding: 14px 32px;
+    background: #fff;
+    color: #1e40af;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+}
+
+.ad-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.4);
+    background: #60a5fa;
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 120vh;
+}
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+    .banner-container {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .header {
+        padding: 30px 40px;
+    }
+    
+    .hero-headline {
+        font-size: 80px;
+        letter-spacing: -3px;
+    }
+    
+    .content-wrapper {
+        padding: 0 40px;
+    }
+    
+    .products-grid {
+        gap: 15px;
+    }
+    
+    .product-card {
+        width: 180px;
+        height: 220px;
+    }
+    
+    .info-bar {
+        left: 40px;
+        right: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        min-height: 150vh;
+    }
+
+    .banner-ad {
+        width: 280px;
+        height: 240px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .ad-content h3 {
+        font-size: 32px;
+    }
+
+    .ad-content p {
+        font-size: 16px;
+    }
+    
+    .banner-container {
+        border-radius: 0;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        gap: 24px;
+        font-size: 13px;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+        padding: 120px 20px 20px;
+        gap: 40px;
+        height: auto;
+    }
+    
+    .left-section {
+        max-width: 100%;
+    }
+    
+    .hero-headline {
+        font-size: 56px;
+        letter-spacing: -2px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    
+    .cta-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .size-selector-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .right-section {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .product-card {
+        width: 100%;
+        height: 200px;
+        padding: 16px;
+    }
+    
+    .product-visual {
+        font-size: 60px;
+    }
+    
+    .info-bar {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        padding: 16px 20px;
+    }
+    
+    .promo-text {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .banner-ad {
+        width: calc(100% - 30px);
+        height: 200px;
+        bottom: 10px;
+        right: 15px;
+        left: 15px;
+    }
+
+    .ad-content {
+        padding: 20px;
+    }
+
+    .ad-content h3 {
+        font-size: 28px;
+    }
+
+    .ad-content p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .ad-cta {
+        padding: 12px 24px;
+        font-size: 12px;
+    }
+    
+    .hero-headline {
+        font-size: 42px;
+    }
+    
+    .logo-circle {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .brand-title {
+        font-size: 16px;
+    }
+    
+    .brand-tagline {
+        font-size: 9px;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+    }
+    
+    .product-card {
+        height: 220px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Banner Ad with smooth fade -->
+    <div class="banner-ad" id="bannerAd">
+        <button class="close-ad" id="closeBtn">&times;</button>
+        <div class="ad-content">
+            <div class="ad-badge">SPECIAL OFFER</div>
+            <h3>Get 20% OFF</h3>
+            <p>Your First Order</p>
+            <button class="ad-cta" onclick="alert('Redirecting to shop!')">Shop Now</button>
+        </div>
+    </div>
+
+    <div class="banner-container">
+        <div class="gradient-bg"></div>
+        <div class="mesh-overlay"></div>
+        
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        
+        <div class="header">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="white">
+                        <path d="M20 5L5 15V25L20 35L35 25V15L20 5Z"/>
+                    </svg>
+                </div>
+                <div class="brand-name">
+                    <div class="brand-title">URBAN THREADS</div>
+                    <div class="brand-tagline">Courage Meets Art In Style</div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Collection</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="left-section">
+                <div class="collection-badge">
+                    <span class="badge-dot"></span>
+                    New Collection 2025
+                </div>
+                
+                <h1 class="hero-headline">
+                    BACK TO<br>
+                    <span class="gradient-text">SCHOOL</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Express yourself with bold designs crafted for the streets and the classroom. Limited edition styles dropping now.
+                </p>
+                
+                <div class="cta-group">
+                    <button class="btn-primary" onclick="alert('Explore Collection - Coming Soon!')">
+                        Shop Collection
+                    </button>
+                    <button class="btn-secondary" onclick="alert('View Lookbook!')">
+                        View Lookbook
+                    </button>
+                </div>
+                
+                <div class="size-selector-main">
+                    <div class="size-label">Select Size:</div>
+                    <div class="size-options">
+                        <button class="size-btn-main" onclick="alert('Size S selected!')">S</button>
+                        <button class="size-btn-main" onclick="alert('Size M selected!')">M</button>
+                        <button class="size-btn-main" onclick="alert('Size L selected!')">L</button>
+                        <button class="size-btn-main" onclick="alert('Size XL selected!')">XL</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <div class="products-grid">
+                    <div class="product-card" onclick="alert('Urban Classic - Added to cart!')">
+                        <div class="product-header">
+                            <div class="tag-new">NEW</div>
+                            <div class="product-price">₱499</div>
+                        </div>
+                        <div class="product-visual">👕</div>
+                        <div class="product-info">
+                            <div class="product-name">Urban Classic</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" onclick="alert('Street Vibe - Added to cart!')">
+                        <div class="product-header">
+                            <div class="tag-new">NEW</div>
+                            <div class="product-price">₱549</div>
+                        </div>
+                        <div class="product-visual">👔</div>
+                        <div class="product-info">
+                            <div class="product-name">Street Vibe</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" onclick="alert('Bold Letters - Added to cart!')">
+                        <div class="product-header">
+                            <div style="width: 40px;"></div>
+                            <div class="product-price">₱599</div>
+                        </div>
+                        <div class="product-visual">🎨</div>
+                        <div class="product-info">
+                            <div class="product-name">Bold Letters</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" onclick="alert('Campus Cool - Added to cart!')">
+                        <div class="product-header">
+                            <div style="width: 40px;"></div>
+                            <div class="product-price">₱529</div>
+                        </div>
+                        <div class="product-visual">⚡</div>
+                        <div class="product-info">
+                            <div class="product-name">Campus Cool</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-bar">
+            <div class="promo-text">
+                Free shipping on orders over <span>₱1,500</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Show banner ad with smooth fade-in after delay
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.getElementById('bannerAd').classList.add('show');
+        }, 1000); // 1 second delay for smooth entrance
+    });
+
+    // Close ad with smooth fade-out
+    document.getElementById('closeBtn').addEventListener('click', function() {
+        document.getElementById('bannerAd').classList.remove('show');
+    });
+    </script>
+</body>
+</html>
+
